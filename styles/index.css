@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
+:root {
+  --main--color: #dcf2f9;
+  --secondary--color: #13376c;
+  --gray--color: #4d5b6f;
+  --orange--color: #f06742;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Manrope", sans-serif;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 80rem;
+  margin: auto;
+  position: relative;
+}
+
+/* Nav */
+nav {
+  background: var(--main--color);
+  padding: 24px 0;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav--col1 img {
+  width: 50%;
+}
+.nav--col2 {
+  display: flex;
+  align-items: center;
+}
+.nav--col2 li {
+  margin-left: 64px;
+}
+.nav--col2 li:first-child {
+  margin-left: 0;
+}
+.nav--col2 li a {
+  font-weight: bold;
+  color: var(--secondary--color);
+}
+
+.sign__in--nav {
+  text-decoration: underline;
+}
+
+.sign__up--nav {
+  padding: 10px 24px;
+  border: 2px solid var(--secondary--color);
+  border-radius: 50rem;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--main--color);
+  height: 180px;
+}
+.header h1 {
+  font-size: 3.75rem;
+  text-align: center;
+  color: var(--secondary--color);
+}
+.header img {
+  position: absolute;
+  right: 0;
+  top: -57px;
+  width: 25%;
+}
+
+/* Start Your Search */
+
+.start__your--search {
+  margin-top: 50px;
+}
+.start__your--search .container {
+  background-image: url("/images/behind--form.png");
+  height: 224px;
+  background-position: right;
+  padding-left: 128px;
+  padding-right: 128px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+}
+.start__your--search h2 {
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+  color: var(--secondary--color);
+}
+
+.start__your--search .container input {
+  width: 100%;
+  padding-left: 48px;
+  padding-right: 15px;
+  border-radius: 0.5rem;
+  height: 56px;
+  border: 1px solid var(--gray--color);
+  font-size: 1rem;
+}
+
+.start__your--search .container .input {
+  position: relative;
+}
+.start__your--search .container .input i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translate(0, -50%);
+  font-size: 20px;
+  color: #535762;
+}
+
+/* Medications */
+
+.medications--links {
+  margin-top: 50px;
+}
+.medications--links .active__link--medications {
+  text-decoration: underline;
+  color: var(--orange--color) !important;
+}
+.medications--links .container {
+  padding-bottom: 50px;
+  display: flex;
+  border-bottom: 1px solid var(--secondary--color);
+}
+
+.medications--links .container ul {
+  flex: 1;
+}
+.medications--links .container ul li {
+  margin-bottom: 10px;
+}
+.medications--links .container ul li a {
+  color: var(--secondary--color);
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
