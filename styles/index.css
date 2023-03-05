@@ -4,6 +4,8 @@
   --secondary--color: #13376c;
   --gray--color: #4d5b6f;
   --orange--color: #f06742;
+  --bright--blue--color: #0173cb;
+  --green--color: #14851d;
 }
 
 * {
@@ -156,4 +158,117 @@ nav .container {
   font-weight: bold;
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+/* All Medications */
+
+.all--medications {
+  margin-bottom: 32px;
+}
+.all--medications h2 {
+  color: var(--secondary--color);
+  font-size: 1.25rem;
+  text-align: center;
+  margin-top: 64px;
+  margin-bottom: 32px;
+}
+
+.all--medications #all--medications--div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.all--medications #all--medications--div p {
+  margin-right: 10px;
+}
+
+/* Medications List */
+
+.medications--list__table {
+  display: flex;
+  align-items: center;
+  background: var(--main--color);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.medications--list__table .prva--lista {
+  flex: 3;
+  padding: 16px;
+}
+.medications--list .druga--lista,
+.medications--list .treca--lista,
+.medications--list .cetvrta--lista,
+.medications--list .peta--lista,
+.medications--list .sesta--lista {
+  flex: 1;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+.medications--list__table li a {
+  font-size: 1.25rem;
+  color: #000;
+  font-weight: 600;
+}
+
+/* Div */
+
+.medications--lista--div {
+  display: flex;
+}
+
+.medications--lista--div .prva--lista--medic {
+  flex: 3;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+}
+.medications--lista--div .prva--lista--medic a {
+  text-decoration: underline;
+  color: var(--bright--blue--color);
+}
+.medications--lista--div .druga--lista--medic,
+.medications--lista--div .treca--lista--medic,
+.medications--lista--div .cetvrta--lista--medic,
+.medications--lista--div .peta--lista--medic,
+.medications--lista--div .sesta--lista--medic {
+  flex: 1;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.medications--lista--div .druga--lista--medic a,
+.medications--lista--div .treca--lista--medic a,
+.medications--lista--div .cetvrta--lista--medic a,
+.medications--lista--div .peta--lista--medic a,
+.medications--lista--div .sesta--lista--medic a {
+  color: #000;
+  cursor: default;
+  pointer-events: none;
+  text-align: center;
+}
+
+.treca--lista--medic a {
+  text-decoration: line-through;
+}
+.peta--lista--medic a {
+  color: var(--green--color) !important;
+}
+
+.sesta--lista--medic a {
+  padding: 2px 16px;
+  border: 2px solid var(--secondary--color);
+  border-radius: 50rem;
+  transition: all 0.3s ease;
+  background: transparent;
+  color: var(--secondary--color);
+  font-weight: 600;
+}
+
+.sesta--lista--medic a:hover {
+  background: var(--secondary--color);
+  color: #fff;
 }
