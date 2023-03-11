@@ -247,8 +247,7 @@ nav .container {
 .medications--lista--div .druga--lista--medic a,
 .medications--lista--div .treca--lista--medic a,
 .medications--lista--div .cetvrta--lista--medic a,
-.medications--lista--div .peta--lista--medic a,
-.medications--lista--div .sesta--lista--medic a {
+.medications--lista--div .peta--lista--medic a {
   color: #000;
   cursor: default;
   pointer-events: none;
