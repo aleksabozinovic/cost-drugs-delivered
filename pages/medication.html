@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+  <title>{{data.meta_tags.title}}</title>
+  <meta content="{{data.meta_tags.description}}" name="description" />
+  <meta content="{{data.meta_tags.keywords}}" name="keywords" />
+
+  {% include "partials/head.html" %}
+</head>
+
+<body>
+  {% include "partials/header.html" %}
+
+  <!-- #main -->
+  <main id="main">
+    <h1>Medication Details</h1>
+    <div>
+      <strong>Name: </strong>{{data.name}}
+    </div>
+    <div>
+      <strong>Generic for: </strong>{{data.brand}}
+    </div>
+    <div>
+      <strong>Categories: </strong>{{data.categories}}
+    </div>
+    <div>
+      <strong>Forms: </strong>{{data.forms}}
+    </div>
+
+    {% for form in data.forms %}
+    <div>
+      <br />
+      <hr />
+      <div>
+        <strong>Strengths & Volumes:</strong> {{form}}
+      </div>
+
+      {% for strength in data.forms_data[form] %}
+      <br>
+      <div>
+        <span>Strength: {{strength.strength}}mg</span>,
+        <span>Price: ${{strength.price}}mg</span>,
+        <span>In Stock: {{strength.in_stock}}</span>
+      </div>
+
+      <div>
+
+        {% for volume in strength.volumes %}
+        <div>
+          <span>Volume: {{volume.volume}}</span>,
+          <span>Discount: ${{volume.discount}}%</span>
+        </div>
+        {% endfor %}
+
+      </div>
+      {% endfor %}
+
+    </div>
+    {% endfor %}
+  </main>
+  <!-- End #main -->
+
+  {% include "partials/footer.html" %}
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Cost Drugs Delivered</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    {% include "partials/head.html" %}
+  </head>
+
+  <body>
+    {% include "partials/header.html" %}
+
+    <!-- #main -->
+    <main id="main">
+      <div class="container">
+        <div class="main__div">
+          <h1>Medications</h1>
+          <!-- <img src="/images/medicine--header.png" alt="header" /> -->
+        </div>
+        <div>
+          <a href="/medications">See all medications</a>
+        </div>
+      </div>
+
+      <div class="add__new--medications">
+        <h2>Don’t see your medication?</h2>
+        <p>
+          We're always adding new medications to our pharmacy. Tell us which
+          drugs you're looking for and we'll let you know when they become
+          available.
+        </p>
+
+        <form action="#">
+          <input
+            type="text"
+            placeholder="Enter drug names separated with a comma"
+          />
+          <input type="email" placeholder="Enter email address" />
+          <button type="submit">Submit</button>
+        </form>
+        <div class="add__new--medications--img">
+          <img src="/images/particles__new--medicine.png" alt="img" />
+        </div>
+      </d>
+    </main>
+
+    <!-- End #main -->
+
+    {% include "partials/footer.html" %}
+  </body>
+</html>

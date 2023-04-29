@@ -1,0 +1,23 @@
+{
+  "name": "cost-drugs-templates",
+  "version": "1.0.0",
+  "description": "Cost Drugs Delivered Templates",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "author": "Krishan Kumar Mourya <mouryakrishan@gmail.com>",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^2.6.9",
+    "swig": "^1.4.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "nodemonConfig": {
+    "ext": "js,html,json"
+  }
+}
