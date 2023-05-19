@@ -120,7 +120,7 @@ header div a:last-child {
 .add__new--medications--img {
   position: absolute;
   left: 0;
-  bottom: -4px;
+  bottom: -6px;
 }
 
 .add__new--medications form {
@@ -136,6 +136,7 @@ header div a:last-child {
   padding: 16px 24px;
   border-radius: 0.357rem;
   font-size: 1rem;
+  z-index: 1;
 }
 .add__new--medications form button {
   margin-top: 16px;
